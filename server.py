@@ -2,7 +2,7 @@
 from pathlib import Path
 
 PORT = 8000
-STATIC_DIR = Path(__file__).parent / "static"
+STATIC_DIR = Path(__file__).parent
 
 class PortfolioHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
