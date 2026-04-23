@@ -123,7 +123,7 @@ section{padding:6rem 3rem;max-width:1100px;margin:0 auto}
     z-index:1
 }
 
-/* ===== MOBILE FIX – only hero section name wrapping & buttons ===== */
+/* ===== MOBILE FIX – keep original line breaks, no broken words ===== */
 @media(max-width:768px){
     .nav{padding:1rem 1.5rem}
     .nav-links{gap:1.2rem}
@@ -138,7 +138,7 @@ section{padding:6rem 3rem;max-width:1100px;margin:0 auto}
     .contact-cards{flex-direction:column;align-items:center}
     .hero-bg-text{font-size:5rem;opacity:.2;right:auto;left:50%;transform:translateX(-50%);top:20%}
     
-    /* Hero photo on mobile – centered, circular, smaller */
+    /* Hero photo – centered, circular, smaller */
     .hero-photo{
         position:relative !important;
         right:auto !important;
@@ -155,16 +155,17 @@ section{padding:6rem 3rem;max-width:1100px;margin:0 auto}
     .hero-photo::before{display:none !important}
     .hero-photo img{border-radius:50% !important}
     
-    /* Name wrapping fix */
+    /* Name – keep the <br> so it stacks: Dimakatso / Sarah / Molefe */
     .hero-name{
-        font-size:clamp(2.3rem,7vw,3.5rem);
-        line-height:1.1;
-        word-break:break-word;
-        text-align:center
+        font-size:clamp(2.2rem, 6vw, 3rem);
+        line-height:1.2;
+        text-align:center;
+        word-break:normal;
+        overflow-wrap:break-word;
     }
-    .hero-name br{display:none}  /* remove forced <br> so name wraps naturally */
+    /* Do NOT hide the <br> – let it create line breaks naturally */
     
-    /* Buttons – prevent overflow, make them fit */
+    /* Buttons */
     .hero-actions{
         justify-content:center;
         gap:0.8rem;
@@ -175,7 +176,11 @@ section{padding:6rem 3rem;max-width:1100px;margin:0 auto}
         font-size:0.75rem;
         white-space:nowrap
     }
-    .hero-content{text-align:center}
+    .hero-content{
+        text-align:center;
+        width:100%;
+        padding:0 0.5rem;
+    }
 }
 
 /* ===== DOWNLOAD RESUME BUTTON (unchanged) ===== */
