@@ -92,25 +92,107 @@ section{padding:6rem 3rem;max-width:1100px;margin:0 auto}
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:none}
-@media(max-width:768px){.nav{padding:1rem 1.5rem}.nav-links{gap:1.2rem}.nav-links li:not(:last-child){display:none}section{padding:4rem 1.5rem}.hero{padding:7rem 1.5rem 3rem}.about-grid{grid-template-columns:1fr;gap:2.5rem}.skills-grid{grid-template-columns:1fr}.project-featured{grid-template-columns:1fr;gap:0}.mini-projects{grid-template-columns:1fr}.edu-item{grid-template-columns:1fr;gap:.5rem}.contact-cards{flex-direction:column;align-items:center}.hero-bg-text{font-size:8rem;opacity:.5}}
 
-.hero-photo{position:absolute;right:2rem;top:50%;transform:translateY(-50%);z-index:2;width:260px;height:340px;border-radius:12px;overflow:hidden;border:1px solid var(--border);box-shadow:0 0 80px rgba(200,240,110,0.08)}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:filter .4s}
+/* ===== HERO PHOTO – clean desktop version ===== */
+.hero-photo{
+    position:absolute;
+    right:2rem;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:2;
+    width:260px;
+    height:340px;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid var(--border);
+    box-shadow:0 0 80px rgba(200,240,110,0.08)
+}
+.hero-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+    transition:filter .4s
+}
 .hero-photo:hover img{filter:brightness(1.05)}
-.hero-photo::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 60%,var(--black) 100%);z-index:1}
-@media(max-width:768px){.hero-photo{position:relative;right:auto;top:auto;transform:none;width:200px;height:240px;margin:0 auto 2rem}}
+.hero-photo::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to bottom,transparent 60%,var(--black) 100%);
+    z-index:1
+}
 
+/* ===== MOBILE FIX – only hero section name wrapping & buttons ===== */
+@media(max-width:768px){
+    .nav{padding:1rem 1.5rem}
+    .nav-links{gap:1.2rem}
+    .nav-links li:not(:last-child){display:none}
+    section{padding:4rem 1.5rem}
+    .hero{padding:7rem 1.5rem 3rem; text-align:center}
+    .about-grid{grid-template-columns:1fr;gap:2.5rem}
+    .skills-grid{grid-template-columns:1fr}
+    .project-featured{grid-template-columns:1fr;gap:0}
+    .mini-projects{grid-template-columns:1fr}
+    .edu-item{grid-template-columns:1fr;gap:.5rem}
+    .contact-cards{flex-direction:column;align-items:center}
+    .hero-bg-text{font-size:5rem;opacity:.2;right:auto;left:50%;transform:translateX(-50%);top:20%}
+    
+    /* Hero photo on mobile – centered, circular, smaller */
+    .hero-photo{
+        position:relative !important;
+        right:auto !important;
+        top:auto !important;
+        transform:none !important;
+        width:140px !important;
+        height:140px !important;
+        border-radius:50% !important;
+        margin:0 auto 1.5rem auto !important;
+        border:2px solid var(--accent) !important;
+        box-shadow:0 0 30px rgba(200,240,110,0.15) !important;
+        display:block !important
+    }
+    .hero-photo::before{display:none !important}
+    .hero-photo img{border-radius:50% !important}
+    
+    /* Name wrapping fix */
+    .hero-name{
+        font-size:clamp(2.3rem,7vw,3.5rem);
+        line-height:1.1;
+        word-break:break-word;
+        text-align:center
+    }
+    .hero-name br{display:none}  /* remove forced <br> so name wraps naturally */
+    
+    /* Buttons – prevent overflow, make them fit */
+    .hero-actions{
+        justify-content:center;
+        gap:0.8rem;
+        flex-wrap:wrap
+    }
+    .btn-primary, .btn-resume, .btn-ghost{
+        padding:0.6rem 1.2rem;
+        font-size:0.75rem;
+        white-space:nowrap
+    }
+    .hero-content{text-align:center}
+}
 
-
-.hero-photo{position:absolute !important;right:1rem !important;top:50% !important;transform:translateY(-50%) !important;width:220px !important;height:300px !important}
-
-
-.hero-photo{position:relative !important;right:auto !important;top:auto !important;transform:none !important;width:120px !important;height:120px !important;border-radius:50% !important;overflow:hidden !important;border:2px solid var(--accent) !important;box-shadow:0 0 30px rgba(200,240,110,0.15) !important;margin-bottom:1rem !important;display:inline-block !important}
-.hero-photo img{width:100% !important;height:100% !important;object-fit:cover !important;object-position:center top !important}
-.hero-photo::before{display:none !important}
-
-
-.btn-resume{background:transparent;color:var(--accent);font-family:var(--font-display);font-weight:700;font-size:.85rem;letter-spacing:.05em;padding:.85rem 2rem;border-radius:var(--radius);border:2px solid var(--accent);transition:background .2s,color .2s,transform .2s;display:inline-flex;align-items:center;gap:.5rem}
+/* ===== DOWNLOAD RESUME BUTTON (unchanged) ===== */
+.btn-resume{
+    background:transparent;
+    color:var(--accent);
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:.85rem;
+    letter-spacing:.05em;
+    padding:.85rem 2rem;
+    border-radius:var(--radius);
+    border:2px solid var(--accent);
+    transition:background .2s,color .2s,transform .2s;
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem
+}
 .btn-resume::before{content:'↓'}
 .btn-resume:hover{background:var(--accent);color:var(--black);transform:translateY(-2px)}
-
