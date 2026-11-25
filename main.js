@@ -5,7 +5,7 @@
 }, { threshold: 0.12 });
 
 document.querySelectorAll(
-  '.skill-card, .project-featured, .edu-item, .mini-card, .about-left, .about-right, .section-title'
+  '.skill-card, .project-featured, .edu-item, .mini-card, .cert-card, .about-left, .about-right, .section-title'
 ).forEach(el => { el.classList.add('reveal'); observer.observe(el); });
 
 const sections = document.querySelectorAll('section[id]');

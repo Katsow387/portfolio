@@ -1,108 +1,170 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="<meta name="google-site-verification" content="yXgu2M5FaeKu6dNB_7eZaWnU4b_-VRXnPRoENBu9Zt8" />" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dimakatso Sarah Molefe — Full Stack Developer</title>
+  <meta name="description" content="Dimakatso Sarah Molefe, Computer Science diploma graduate and junior full-stack developer (Node.js, Python, SQL). View projects and certificates.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="nav">
-    <span class="nav-logo">DSM</span>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Home">DSM</a>
+  <nav aria-label="Main">
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a class="nav-cta" href="#contact">Hire me</a></li>
     </ul>
   </nav>
+</header>
+
+<main id="top">
   <section class="hero">
-    <div class="hero-bg-text">DEV</div>
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-tag"><span class="dot"></span> Available for opportunities</div>
-        <h1 class="hero-name">Dimakatso<br/><em>Sarah</em> Molefe</h1>
-        <p class="hero-title">Full Stack Developer</p>
-        <p class="hero-sub">Meticulous &nbsp;·&nbsp; Analytical &nbsp;·&nbsp; Ready to Ship Code</p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn-primary">View My Work</a><a href="resume.pdf" target="_blank" class="btn-resume">Download Resume</a>
-          <a href="https://github.com/Katsow387" target="_blank" class="btn-ghost">GitHub ↗</a>
-        </div>
-      </div>
-      <div class="hero-photo">
-        <img src="Dima.jpeg" alt="Dimakatso Sarah Molefe" />
+    <div class="hero-text">
+      <p class="status"><span class="dot"></span>Available from October 2026</p>
+      <h1>Dimakatso Sarah Molefe</h1>
+      <p class="role">Junior full-stack developer</p>
+      <p class="lead">I build web applications from the database to the browser: Node.js and Python back ends, SQL that stays fast, and interfaces that work on a phone.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#projects">See my projects</a>
+        <a class="btn btn-outline" href="#certificates">View certificates</a>
+        <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Download CV</a>
       </div>
     </div>
-    <div class="hero-scroll"><span>scroll</span><div class="scroll-line"></div></div>
+    <img class="hero-photo" src="Dima.jpeg" alt="Dimakatso Sarah Molefe smiling at the camera" width="420" height="560">
   </section>
-  <section class="about" id="about">
-    <div class="section-label">/ 01 &nbsp; About</div>
-    <div class="about-grid">
-      <div class="about-left">
-        <h2>Building bridges between<br/><em>complex needs</em> &amp;<br/>elegant solutions.</h2>
-      </div>
-      <div class="about-right">
-        <p>I am a driven, meticulous Full Stack Developer finalizing my Work-Integrated Learning (WIL) program as part of my Computer Science diploma. I specialize in building user-centric, full-cycle web applications — robust frontends backed by resilient server-side logic.</p>
-        <p>My technical background is fortified by specialized training from <strong>Okanagan College (Canada)</strong> and a <strong>Diploma in Computer Science</strong> from Tshwane University of Technology.</p>
-        <div class="about-links">
-          <a href="https://www.linkedin.com/in/dimakatso-molefe-028980366" target="_blank">LinkedIn ↗</a>
-          <a href="https://github.com/Katsow387" target="_blank">GitHub ↗</a>
-          <a href="mailto:dmolefe726@gmail.com">Email ↗</a>
-        </div>
-      </div>
+
+  <section id="about">
+    <div class="about-left section-title"><h2>About me</h2></div>
+    <div class="about-right">
+      <p>I’m a Computer Science diploma graduate from Tshwane University of Technology with hands-on experience shipping client-facing web applications in Agile teams.</p>
+      <p>I’ve worked as a Full Stack Developer at Imvelaphi Technologies and a Front End Developer at Investhoot IT, where I also diagnosed and fixed slow pages, database queries and browser issues. I completed networking and cyber security training with Okanagan College and Huawei.</p>
+      <p class="links">
+        <a href="https://www.linkedin.com/in/dimakatso-molefe-028980366" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Katsow387" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:dmolefe726@gmail.com">Email</a>
+      </p>
     </div>
   </section>
-  <section class="skills" id="skills">
-    <div class="section-label">/ 02 &nbsp; Skills</div>
-    <h2 class="section-title">Technical Stack</h2>
-    <div class="skills-grid">
-      <div class="skill-card"><div class="skill-icon">&#11041;</div><h3>Frontend</h3><ul><li>HTML5 &amp; CSS3</li><li>JavaScript (ES6+)</li><li>Responsive / Mobile-First Design</li><li>DOM Manipulation</li><li>Front-end Security Practices</li></ul></div>
-      <div class="skill-card"><div class="skill-icon">&#11041;</div><h3>Backend &amp; API</h3><ul><li>Node.js / Python</li><li>Express.js / Django</li><li>RESTful API Design</li><li>User Authentication (JWT)</li><li>API Rate Limiting &amp; Security</li></ul></div>
-      <div class="skill-card"><div class="skill-icon">&#11041;</div><h3>Databases &amp; DevOps</h3><ul><li>SQL (PostgreSQL, MySQL)</li><li>Database Schema Design</li><li>Query Optimization</li><li>Git / Version Control</li><li>Agile Methodologies</li></ul></div>
+
+  <section id="skills">
+    <div class="section-title"><h2>Skills</h2></div>
+    <div class="card-grid">
+      <article class="skill-card"><h3>Front end</h3><ul><li>HTML5 and CSS3</li><li>JavaScript (ES6+)</li><li>Responsive, mobile-first design</li><li>Cross-browser compatibility</li></ul></article>
+      <article class="skill-card"><h3>Back end and APIs</h3><ul><li>Node.js and Express.js</li><li>Python and Django</li><li>RESTful API design</li><li>JWT authentication, rate limiting</li></ul></article>
+      <article class="skill-card"><h3>Databases and tools</h3><ul><li>PostgreSQL and MySQL</li><li>Schema design, query optimisation</li><li>Git and version control</li><li>Agile teamwork</li></ul></article>
+      <article class="skill-card"><h3>Networking and security</h3><ul><li>Local area networking</li><li>Network security threats and prevention</li><li>Encryption fundamentals</li><li>Multi-tenant access control</li></ul></article>
     </div>
   </section>
-  <section class="projects" id="projects">
-    <div class="section-label">/ 03 &nbsp; Projects</div>
-    <h2 class="section-title">Featured Work</h2>
-    <div class="project-featured"><div class="project-number">01</div><div class="project-info"><div class="project-tags"><span>Full Stack</span><span>SQL</span><span>REST API</span></div><h3>Quickbird Delivery Platform</h3><p>A data-driven, full-stack logistics web application that streamlines local logistics — from secure order placement to delivery tracking management.</p><div class="project-highlights"><div><strong>Challenge:</strong> Optimized SQL data management with complex queries to keep tracking data consistent and efficiently delivered.</div><div><strong>Skills:</strong> Data Integration · Optimized SQL · Full Stack Communication</div></div><div class="project-links"><a href="https://github.com/aquamarinemichelle/QuickBird" target="_blank" class="btn-outline">GitHub ↗</a></div></div></div>
-    <div class="project-featured"><div class="project-number">02</div><div class="project-info"><div class="project-tags"><span>Auth</span><span>JWT</span><span>Multi-Tenant</span></div><h3>SlotGoApp — Business Directory &amp; Booking</h3><p>A user-centric booking and discovery platform empowering small local businesses to showcase services while offering customers a streamlined direct booking system.</p><div class="project-highlights"><div><strong>Challenge:</strong> Built secure user flows with JWT authentication, managing distinct access levels for business owners and customers.</div><div><strong>Skills:</strong> User AuthN · System Access Control · Multi-Tenant Logic</div></div><div class="project-links"><a href="https://github.com/Mlondy820/SlotGoApp" target="_blank" class="btn-outline">GitHub ↗</a></div></div></div>
-    <div class="project-featured"><div class="project-number">03</div><div class="project-info"><div class="project-tags"><span>Backend</span><span>API Design</span><span>Security</span></div><h3>Property Finder API</h3><p>A high-performance backend system for real estate data, showcasing robust API development and efficient database schema design for complex datasets.</p><div class="project-highlights"><div><strong>Challenge:</strong> Implemented API rate limiting and refined complex SQL aggregation pipelines so heavy property searches always respond efficiently.</div><div><strong>Skills:</strong> REST API Architecture · Backend Query Optimization · API Security</div></div><div class="project-links"><a href="https://github.com/aquamarinemichelle/Property_Finder" target="_blank" class="btn-outline">GitHub ↗</a></div></div></div>
-    <h2 class="section-title" style="margin-top:5rem;">Additional Projects</h2>
-    <div class="mini-projects">
-      <a href="https://github.com/Katsow387/Student-Management-System" target="_blank" class="mini-card"><span class="mini-num">↗</span><h4>Student Management System</h4><p>Academic CRUD app for student registration, grading, and reporting with structured relational data handling.</p><div class="mini-tags"><span>CRUD</span><span>SQL</span></div></a>
-      <a href="https://github.com/Katsow387/g-mindos-website" target="_blank" class="mini-card"><span class="mini-num">↗</span><h4>G-Mindo's Website</h4><p>Polished, fully responsive client website showcasing expertise in CSS, UX principles, and design-to-code conversion.</p><div class="mini-tags"><span>CSS</span><span>UX</span><span>Responsive</span></div></a>
+
+  <section id="projects">
+    <div class="section-title"><h2>Projects</h2></div>
+    <article class="project-featured">
+      <h3>Quickbird Delivery Platform</h3>
+      <p class="tags">Full stack · SQL · REST API</p>
+      <p>A logistics web app for local deliveries, from secure order placement to delivery tracking. I contributed to both the back end and front end, and optimised the SQL queries that keep tracking data consistent.</p>
+      <a class="text-link" href="https://github.com/aquamarinemichelle/QuickBird" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="project-featured">
+      <h3>SlotGoApp: business directory and booking</h3>
+      <p class="tags">Auth · JWT · Multi-tenant</p>
+      <p>A platform where small local businesses list their services and customers book directly. I worked on the front end, which sits on JWT authentication and separate access levels for business owners and customers.</p>
+      <a class="text-link" href="https://github.com/Mlondy820/SlotGoApp" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="project-featured">
+      <h3>Property Finder API</h3>
+      <p class="tags">Back end · API design · Security</p>
+      <p>A real estate back end with API rate limiting and SQL aggregation queries, built so heavy property searches stay responsive. I contributed to the SQL and back-end layer.</p>
+      <a class="text-link" href="https://github.com/aquamarinemichelle/Property_Finder" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+
+    <h3 class="sub-heading">More projects</h3>
+    <div class="card-grid">
+      <a class="mini-card" href="https://github.com/Katsow387/Kwa-Khanye" target="_blank" rel="noopener"><h4>Kwa-Khanye</h4><p>Full-stack web app built during my placement at Imvelaphi Technologies.</p></a>
+      <a class="mini-card" href="https://github.com/Katsow387/segwata-holdings" target="_blank" rel="noopener"><h4>Segwata Holdings (SGT GO)</h4><p>Full-stack application developed during industry work experience for a Gauteng multi-service company.</p></a>
+      <a class="mini-card" href="https://github.com/Katsow387/Powershare" target="_blank" rel="noopener"><h4>PowerShare</h4><p>Web app built with Python and Streamlit, with custom CSS for a tailored interface.</p></a>
+      <a class="mini-card" href="https://github.com/Katsow387/Student-Management-System" target="_blank" rel="noopener"><h4>Student Management System</h4><p>CRUD app for student registration, grading and reporting.</p></a>
+      <a class="mini-card" href="https://github.com/Katsow387/g-mindos-website" target="_blank" rel="noopener"><h4>G-Mindo’s Website</h4><p>Responsive client website, converted from design to code.</p></a>
     </div>
   </section>
-  <section class="education" id="education">
-    <div class="section-label">/ 04 &nbsp; Education</div>
-    <h2 class="section-title">Academic Background</h2>
+
+  <section id="education">
+    <div class="section-title"><h2>Education</h2></div>
     <div class="edu-list">
-      <div class="edu-item"><div class="edu-year">Current</div><div class="edu-content"><h3>Diploma in Computer Science</h3><p class="edu-school">Tshwane University of Technology · South Africa</p><p>Data Structures &amp; Algorithms, Software Engineering, Database Systems</p></div></div>
-      <div class="edu-item"><div class="edu-year">Canada</div><div class="edu-content"><h3>Certificate in IT Concepts</h3><p class="edu-school">Okanagan College · Canada</p><p>Core computing principles, problem-solving methodologies, and system architecture</p></div></div>
-      <div class="edu-item"><div class="edu-year">Matric</div><div class="edu-content"><h3>Senior Certificate</h3><p class="edu-school">Tswelopele Secondary School</p></div></div>
+      <article class="edu-item">
+        <p class="edu-year">2026</p>
+        <h3>Diploma in Computer Science</h3>
+        <p class="edu-school">Tshwane University of Technology, South Africa</p>
+        <p>Data structures and algorithms, software engineering, database systems.</p>
+      </article>
+      <article class="edu-item">
+        <p class="edu-year">2020</p>
+        <h3>Senior Certificate</h3>
+        <p class="edu-school">Tswelopele Secondary School</p>
+      </article>
     </div>
   </section>
-  <section class="contact" id="contact">
-    <div class="section-label">/ 05 &nbsp; Contact</div>
-    <div class="contact-inner">
-      <h2>Let's Build<br/><em>Something Great</em></h2>
-      <p>I'm actively seeking full-time opportunities. Let's discuss how my full-stack skills can benefit your team.</p>
-      <div class="contact-cards">
-        <a href="mailto:dmolefe726@gmail.com" class="contact-card"><span>&#9993;</span><div><small>Email</small><strong>dmolefe726@gmail.com</strong></div></a>
-        <a href="tel:+27641369776" class="contact-card"><span>&#9990;</span><div><small>Phone</small><strong>+27 64 136 9776</strong></div></a>
-        <a href="https://www.linkedin.com/in/dimakatso-molefe-028980366" target="_blank" class="contact-card"><span>in</span><div><small>LinkedIn</small><strong>dimakatso-molefe</strong></div></a>
-      </div>
-      <a href="mailto:dmolefe726@gmail.com" class="btn-primary large">Get In Touch</a>
+
+  <section id="certificates">
+    <div class="section-title"><h2>Certificates</h2><p class="section-note">Select a certificate to open the full PDF.</p></div>
+    <div class="cert-grid">
+      <article class="mini-card cert-card">
+        <a class="cert-thumb" href="certificates/huawei-cyber-security.pdf" target="_blank" rel="noopener" aria-label="Open Huawei Cyber Security certificate (PDF)">
+          <img src="certificates/huawei-cyber-security.jpg" alt="Huawei Cyber Security certificate of attendance" loading="lazy">
+        </a>
+        <div class="cert-body">
+          <h3>Cyber Security</h3>
+          <p class="cert-issuer">SMME Digital Skills Transformation Training Programme, presented by Huawei Technologies with the Department of Communications and Digital Technologies</p>
+          <p class="cert-date">29 June to 1 July 2026</p>
+          <p class="cert-desc">Network security concepts, common threats and prevention, and the fundamentals of encryption and decryption.</p>
+          <a class="text-link" href="certificates/huawei-cyber-security.pdf" target="_blank" rel="noopener">Open certificate (PDF)</a>
+        </div>
+      </article>
+      <article class="mini-card cert-card">
+        <a class="cert-thumb" href="certificates/local-area-networking-principles.pdf" target="_blank" rel="noopener" aria-label="Open Local Area Networking Principles certificate (PDF)">
+          <img src="certificates/local-area-networking-principles.jpg" alt="Local Area Networking Principles statement of completion" loading="lazy">
+        </a>
+        <div class="cert-body">
+          <h3>Local Area Networking Principles</h3>
+          <p class="cert-issuer">Okanagan College Continuing Studies (Canada), for Southern Labs Institute of Technology</p>
+          <p class="cert-date">26 May to 29 August 2026</p>
+          <a class="text-link" href="certificates/local-area-networking-principles.pdf" target="_blank" rel="noopener">Open certificate (PDF)</a>
+        </div>
+      </article>
+      <article class="mini-card cert-card">
+        <a class="cert-thumb" href="certificates/core-concepts-in-networking.pdf" target="_blank" rel="noopener" aria-label="Open Core Concepts in Networking certificate (PDF)">
+          <img src="certificates/core-concepts-in-networking.jpg" alt="Core Concepts in Networking statement of completion" loading="lazy">
+        </a>
+        <div class="cert-body">
+          <h3>Core Concepts in Networking</h3>
+          <p class="cert-issuer">Okanagan College Continuing Studies (Canada), for Southern Labs Institute of Technology</p>
+          <p class="cert-date">3 February to 9 May 2026</p>
+          <a class="text-link" href="certificates/core-concepts-in-networking.pdf" target="_blank" rel="noopener">Open certificate (PDF)</a>
+        </div>
+      </article>
     </div>
   </section>
-  <footer class="footer"><p>2026 Dimakatso Sarah Molefe · Full Stack Developer · South Africa</p></footer>
-  <script src="main.js"></script>
+
+  <section id="contact">
+    <div class="section-title"><h2>Let’s work together</h2></div>
+    <p class="contact-lead">I’m looking for a full-time developer role. Email me or call and I’ll reply quickly.</p>
+    <div class="contact-list">
+      <a href="mailto:dmolefe726@gmail.com"><span>Email</span>dmolefe726@gmail.com</a>
+      <a href="tel:+27641369776"><span>Phone</span>+27 64 136 9776</a>
+      <a href="https://www.linkedin.com/in/dimakatso-molefe-028980366" target="_blank" rel="noopener"><span>LinkedIn</span>dimakatso-molefe</a>
+      <a href="https://github.com/Katsow387" target="_blank" rel="noopener"><span>GitHub</span>Katsow387</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Dimakatso Sarah Molefe · South Africa</footer>
+<script src="main.js"></script>
 </body>
 </html>
-
-
-
