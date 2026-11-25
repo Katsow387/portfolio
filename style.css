@@ -91,3 +91,6 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);border-top:1px sol
   #about{grid-template-columns:1fr}
   .site-header{flex-direction:column;gap:.4rem}
 }
+
+.card-links{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin:.7rem 0 0 !important}
+.mini-card .card-links{color:inherit}
